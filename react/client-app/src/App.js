@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import LoginHome from './pages/LoginHome'
 import Home from './pages/Home'
-import Products from './pages/Products'
+import Registration from './pages/Registration'
 import Login from './pages/Login'
 import PrivateRoutes from './utils/PrivateRoutes'
 import { useEffect } from 'react';
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route element={<PrivateRoutes />}>
                 <Route element={<LoginHome/>} path="/home" exact/>
-                <Route element={<Products/>} path="/products"/>
+                <Route element={<Registration/>} path="/registration"/>
             </Route>
             <Route element={<Home/>} path="/"/>
             <Route element={<Login/>} path="/login"/>
@@ -30,4 +30,3 @@ function App() {
 }
 
 export default App;
-
