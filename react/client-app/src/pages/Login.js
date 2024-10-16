@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "./Login.css";
+import { Link } from 'react-router-dom';
+
 
 class Login extends Component {
   constructor(props) {
@@ -65,7 +67,7 @@ class Login extends Component {
           </div>
           <input type="submit" value="SIGN IN" className="btn" />
         </form>
-        <a className="link" href="/signup">Sign Up</a>
+        <Link className="link" to="/registration">Sign Up</Link>
       </div>
     );
   }
